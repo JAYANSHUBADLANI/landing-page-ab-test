@@ -1,0 +1,118 @@
+{
+  "n_control": 145274,
+  "n_treatment": 145310,
+  "conversions_control": 17489,
+  "conversions_treatment": 17264,
+  "srm": {
+    "counts": {
+      "control": 145274,
+      "treatment": 145310
+    },
+    "observed_share": {
+      "control": 0.4999380557773312,
+      "treatment": 0.5000619442226688
+    },
+    "chi2": 0.004459984032155934,
+    "p_value": 0.9467543681597944
+  },
+  "test": {
+    "rate_control": 0.1203863045004612,
+    "rate_treatment": 0.11880806551510564,
+    "ci_control": [
+      0.11871294722381814,
+      0.12205966177710426
+    ],
+    "ci_treatment": [
+      0.11714442856134422,
+      0.12047170246886707
+    ],
+    "abs_lift": -0.0015782389853555567,
+    "rel_lift": -0.01310978845894809,
+    "abs_ci": [
+      -0.003937860245052736,
+      0.0007813822743416229
+    ],
+    "rel_ci": [
+      -0.03271020122590149,
+      0.0064906243080053135
+    ],
+    "z": -1.3109241984234394,
+    "p_value": 0.18988337448195103,
+    "alpha": 0.05,
+    "significant": false,
+    "bootstrap_abs_ci": [
+      -0.0038495381843887027,
+      0.0009273047807798052
+    ]
+  },
+  "power": {
+    "mde_abs_business": 0.005,
+    "mde_rel_business": 0.04153296357710561,
+    "power_at_business_mde": 0.9840235308088855,
+    "detectable_abs_at_target_power": 0.00340317761588808,
+    "target_power": 0.8,
+    "n_per_group_for_business_mde": 67676,
+    "detectable_rel_at_target_power": 0.028268810393420146
+  },
+  "duration": {
+    "start": "2017-01-02 13:42:05.378582",
+    "end": "2017-01-24 13:41:54.460509",
+    "days": 21.999873633414353,
+    "calendar_days": 23
+  },
+  "trend": {
+    "days_used": 21,
+    "slope_per_day": -0.00013035716805213273,
+    "slope_p_value": 0.5344713834628394,
+    "first_half_mean_diff": 6.452586224535428e-06,
+    "second_half_mean_diff": -0.003161840291187004,
+    "days_treatment_ahead": 6,
+    "min_daily_share": 0.49289954166353595,
+    "max_daily_share": 0.5054870203587376
+  },
+  "decision": {
+    "verdict": "keep old page",
+    "reason": "even the most optimistic plausible lift is below the minimum worthwhile lift"
+  },
+  "cleaning": {
+    "raw_rows": 294478,
+    "raw_unique_users": 290584,
+    "raw_repeated_user_rows": 3894,
+    "rows_in": 294478,
+    "mismatched_rows": 3893,
+    "mismatch_breakdown": [
+      {
+        "group": "control",
+        "landing_page": "new_page",
+        "rows": 1928
+      },
+      {
+        "group": "treatment",
+        "landing_page": "old_page",
+        "rows": 1965
+      }
+    ],
+    "duplicate_user_ids": 1,
+    "duplicate_rows_removed": 1,
+    "duplicate_examples": [
+      {
+        "user_id": "773192",
+        "timestamp": "2017-01-09 05:37:58.781806",
+        "group": "treatment",
+        "landing_page": "new_page",
+        "converted": "0"
+      },
+      {
+        "user_id": "773192",
+        "timestamp": "2017-01-14 02:55:59.590927",
+        "group": "treatment",
+        "landing_page": "new_page",
+        "converted": "0"
+      }
+    ],
+    "final_rows": 290584,
+    "rows_removed_total": 3894,
+    "users_lost": 0,
+    "segment_breakdown": "skipped: the source repository has no countries.csv"
+  }
+}
